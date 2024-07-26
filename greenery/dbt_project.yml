@@ -34,3 +34,18 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+    staging:
+      +schema: staging
+      greenery:
+        +materialized: view
+
+    marts:
+      +schema: marts
+      greenery:
+        +materialized: view
+
+    intermediate:
+      +schema: intermediate
+      greenery:
+        +materialized: view
